@@ -3,29 +3,29 @@ using System.Diagnostics;
 
 
 // 1. Информация о компьютере
-Console.WriteLine("1. ИНФОРМАЦИЯ О КОМПЬЮТЕРЕ");
-Console.WriteLine($"Компьютер: {Environment.MachineName}");
-Console.WriteLine($"Пользователь: {Environment.UserName}");
-Console.WriteLine($"Дата и время: {DateTime.Now:dd.MM.yyyy HH:mm}");
+// Console.WriteLine("1. ИНФОРМАЦИЯ О КОМПЬЮТЕРЕ");
+// Console.WriteLine($"Компьютер: {Environment.MachineName}");
+// Console.WriteLine($"Пользователь: {Environment.UserName}");
+// Console.WriteLine($"Дата и время: {DateTime.Now:dd.MM.yyyy HH:mm}");
 
 // // 2. Информация об операционной системе
 // Console.WriteLine("2. ОПЕРАЦИОННАЯ СИСТЕМА");
 // Console.WriteLine($"ОС: {Environment.OSVersion}");
 // Console.WriteLine($"64-битная ОС: {Environment.Is64BitOperatingSystem}");
 
-// // 3. Логические процессоры
+// 3. Логические процессоры
 // Console.WriteLine("3. ПРОЦЕССОР");
 // Console.WriteLine($"Логических процессоров: {Environment.ProcessorCount}");
 
-// // 4. Память процесса
-// Console.WriteLine("4. ПАМЯТЬ ПРОЦЕССА");
+// 4. Память процесса
+Console.WriteLine("4. ПАМЯТЬ ПРОЦЕССА");
 
-// Process currentProcess = Process.GetCurrentProcess();
+Process currentProcess = Process.GetCurrentProcess();
 
-// Console.WriteLine($"PID процесса: {Environment.ProcessId}");
+Console.WriteLine($"PID процесса: {Environment.ProcessId}");
 
-// long memory = Environment.WorkingSet / 1024 / 1024;
-// Console.WriteLine($"Память процесса: {memory} МБ");
+long memory = Environment.WorkingSet / 1024 / 1024;
+Console.WriteLine($"Память процесса: {memory} МБ");
 
 // // Дополнительное задание
 // Console.WriteLine("=== МИНИ-МОНИТОР СИСТЕМЫ ===");
